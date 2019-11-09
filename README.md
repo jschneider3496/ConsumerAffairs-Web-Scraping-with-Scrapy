@@ -1,6 +1,6 @@
 # ConsumerAffairs-Web-Scraping-with-Scrapy
 
-### What this is
+### Context
 - Using Python's Scrapy framework, this program allows for the gathering and storing of reviews from https://www.consumeraffairs.com/ to  .csv format. 
 
 ### How to use
