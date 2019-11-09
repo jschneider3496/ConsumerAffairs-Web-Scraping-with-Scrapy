@@ -24,9 +24,16 @@ class UberSpider(scrapy.Spider):
         items = ConsumeraffairsItem()
 
         # Web-scrape date, stars, and comment
-        date = response.xpath('//div[@class= "rvw js-rvw"]/div[3]/span/text()').extract()
+        date_messy = response.xpath('//div[@class= "rvw js-rvw"]/div[3]/span/text()').extract()
         stars = response.xpath('//div[@class= "rvw js-rvw"]/div[1]/div/img/@data-rating').extract()
         comment = response.xpath('//div[@class= "rvw js-rvw"]/div[3]/p[2]/text()').extract()
+
+        # Edit date to remove excess text
+        date = []
+        for d in date_messy:
+            d = d.replace("Original review: ", "")
+            date.append(d)
+
         result = zip(date, stars, comment)
 
         # Store date, stars, and comment to items
