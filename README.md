@@ -18,3 +18,6 @@
 
 ### Example .csv
 [![Image from Gyazo](https://i.gyazo.com/671fe06eeba94f096014c937dae5887b.png)](https://gyazo.com/671fe06eeba94f096014c937dae5887b)
+
+### Resources
+- https://scrapy.org/
