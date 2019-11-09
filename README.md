@@ -8,11 +8,13 @@
 - Go to https://www.consumeraffairs.com/
 - Find a company such as Uber: https://www.consumeraffairs.com/travel/uber.html
 - Find how many pages of reviews there are: As of 11/9/2019, last page is https://www.consumeraffairs.com/travel/uber.html?page=57#sort=top_reviews&filter=none
-2. Reorganizing sitejapper_bs.py code
+2. Reorganizing spider code
+- rename spider (currently "uber_ca") 
 - replace range(1, 58) with desired range
-- replace ''https://www.consumeraffairs.com/travel/uber.html?page='' with desired company
+- replace 'https://www.consumeraffairs.com/travel/uber.html?page=' with desired company
 3. Execution
-- Run sitejapper_bs.py!
+- Run the spider!
+- scrapy crawl NAME -o CSV_NAME.csv
 
 ### Example .csv
-[![Image from Gyazo](https://i.gyazo.com/1325830faed24ce9f3eae04bd6b3c260.png)](https://gyazo.com/1325830faed24ce9f3eae04bd6b3c260)
+[![Image from Gyazo](https://i.gyazo.com/671fe06eeba94f096014c937dae5887b.png)](https://gyazo.com/671fe06eeba94f096014c937dae5887b)
